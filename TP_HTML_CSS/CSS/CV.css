@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+.navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#734d26;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Osaka_sans_serif, Georgia, 'Times New Roman', Times, serif;
+}
+li a:hover {
+    background-color: #4d3319;
+}
+.right {
+    float: right;
+}
+body {
+    text-align: center;
+    background-image: url("C:/Users/Martin/Desktop/TP_HTML_CSS/img/fond.png");
+    background-size: cover;
+    font-size: 30px;
+}
+.presentation {
+    background-image: url("C:/Users/Martin/Desktop/TP_HTML_CSS/img/title.png");
+    background-size: 500px 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Japanese_3017, Georgia, 'Times New Roman', Times, serif;
+}
+.textpresentation {
+    float: left;
+    width: 50%;
+    padding: 15px;
+    text-align: justify;
+    margin: 0 0 0 0;
+
+}
+.row:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+.imagepresentation {
+    float: left;
+    width: 500px;
+    height: 500px;
+    padding: 15px;
+    border-radius: 50%;
+    margin-left: 100px;
+}
+@media screen and (max-width: 600px) {
+        .imagepresentation {
+          width: 100%;
+        }
+        .textpresentation {
+            width: 100%;
+        }
+      }
+footer {
+    text-align: left;
+    padding: 3px;
+    font-size: 18px;
+}
+.title {
+    font-family: Japanese_3017, Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+@font-face {
+    font-family: 'Japanese_3017';
+    src: url("C:/Users/Martin/Desktop/TP_HTML_CSS/Font/Japanese_3017/Japanese_3017.ttf") format('truetype'),
+         url("C:/Users/Martin/Desktop/TP_HTML_CSS/Font/Japanese_3017/Japanase_3017.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Osaka_sans_serif';
+    src: url("C:/Users/Martin/Desktop/TP_HTML_CSS/Font/Osaka_sans_serif/osaka-re.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.comp_pro {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.pourcentage {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.title-cv {
+    font-family: Japanese_3017, Georgia, 'Times New Roman', Times, serif;
+}
+.gallery {
+    padding: 15px;
+    float: left;
+    width: 25%;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.gallery:hover {
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+.gallery img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #734d26;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=text] {
+    width: 300px;
+    padding: 12px;
+    border: 1px solid #734d26;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit]:hover {
+    background-color: grey;
+}
+input[type=reset]:hover {
+    background-color: grey;
+}
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    align-items: center;
+}
